@@ -9,6 +9,12 @@
   box-sizing: border-box;
 }
 
+/* 텍스트 드래그 선택 색상 */
+::selection {
+  background: var(--color-primary-bg);
+  color: var(--color-primary-dark);
+}
+
 main section {
   position: relative;
 }
