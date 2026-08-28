@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangyeol Park | Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+  <!-- 웹폰트: Pretendard 본문용, Fraunces 로고용 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
+  >
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@1,600&display=swap" rel="stylesheet">
+
+  <!-- 스타일시트 -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+
+  <!-- 포트폴리오 메인 페이지: Header, Hero, Marquee, about, skills, projects, education, Footer -->
+
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- Header -->
+  <header class="header">
+
+    <div class="header-inner">
+
+      <a href="#visual" class="brand">
+        <span class="brand-logo">han<span class="g">g</span>yeol<span class="brand-point">*</span></span>
+      </a>
+
+      <nav class="nav">
+        <a href="#visual" class="active">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#my-projects">PROJECTS</a>
+        <a href="#education">BACKGROUND</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section id="visual" class="visual">
+
+      <div class="hero-bg" id="hero-bg" aria-hidden="true">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+        <span class="blob blob-4"></span>
+      </div>
+
+      <h1 class="main-text">
+        <span class="line">
+          <span class="hero-in-left"><em>BACKEND</em></span>
+          <span class="hero-in-right" style="transition-delay: 0.12s">DEVELOPER</span>
+        </span>
+        <span class="line big reveal-scale" style="transition-delay: 0.28s">PORTFOLIO</span>
+      </h1>
+
+      <h4 class="sub-text reveal" style="transition-delay: 0.15s">
+        Backend-focused full-stack developer, Hangyeol Park.
+      </h4>
+
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track" id="marquee-track"></div>
+    </div>
+
+    <section id="about" class="about">
+
+      <div class="about-inner">
+
+        <div class="about-photo reveal-left">
+          <div class="photo-frame" aria-hidden="true"></div>
+        </div>
+
+        <div class="about-text reveal-right">
+
+          <h3 class="greeting">
+            안녕하세요.
+            <br>
+            <span class="point">백엔드 중심</span> 신입 풀스택 개발자 박한결입니다.
+          </h3>
+
+          <p class="about-desc">
+            일상에서 사소하게 불편했던 것들을 그냥 지나치기보다 "이걸 직접 만들어서 해결해보면 어떨까?"라는 생각을 자주 합니다.
+          </p>
+
+          <p class="about-desc">
+            생각한 것을 구현해보는 과정에서 예상하지 못한 문제가 생기기도 합니다.
+            <br>
+            그럴 때 원인을 찾아 하나씩 해결해가는 과정에서 재미를 느낍니다.
+          </p>
+
+          <p class="about-desc">
+            백엔드를 중심으로 공부하고 있으며 프로젝트를 만들면서 필요한 것들을 찾아 배우고 적용해왔습니다.
+            <br>
+            배운 내용을 실제로 활용해 보고 문제가 생기면 더 나은 방법을 찾아 해결하며 개발하고 있습니다.
+          </p>
+
+          <div class="about-links">
+
+            <span class="email-btn-wrap">
+              <button type="button" class="btn btn-primary" id="email-copy-btn">Email</button>
+              <span class="copy-hint" id="copy-hint">클릭하면 복사됩니다.</span>
+            </span>
+
+            <a class="btn btn-outline" href="https://github.com/1gyeolpark" target="_blank" rel="noopener">GitHub</a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="skills" class="skills">
+
+      <div class="section-inner">
+
+        <h2 class="section-title reveal-scale">SKILLS</h2>
+
+        <div class="wm-block c-orange reveal-left">
+          <span class="wm">01</span>
+          <h3>Backend</h3>
+          <p>Java 21 · Spring Boot · Spring Security · JPA · MySQL · Redis</p>
+        </div>
+
+        <div class="wm-block c-teal reveal-right" style="transition-delay: 0.1s">
+          <span class="wm">02</span>
+          <h3>Frontend</h3>
+          <p>React (Vite) · react-router-dom · Axios · Sass</p>
+        </div>
+
+        <div class="wm-block c-ink reveal-left" style="transition-delay: 0.2s">
+          <span class="wm">03</span>
+          <h3>Infra</h3>
+          <p>Docker Compose · EC2 · RDS · GitHub Actions</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="my-projects" class="my-projects">
+
+      <div class="section-inner">
+
+        <h2 class="section-title reveal-scale">MY PROJECTS</h2>
+
+        <ul class="project-list">
+          <li class="project-card reveal-scale">
+
+            <img class="project-thumb" src="images/tails-preview.png" alt="Tails 서비스 화면">
+
+            <div class="project-body">
+
+              <div class="project-text">
+
+                <h4>Tails</h4>
+
+                <p>반려동물과 함께 여행할 장소를 찾고 일정을 계획하는 서비스</p>
+
+                <ul class="project-features stagger">
+                  <li>JWT Access/Refresh 토큰 인증</li>
+                  <li>카카오·구글·네이버 OAuth2 소셜 로그인</li>
+                  <li>게시판 CRUD, 좋아요·북마크, 무한 depth 대댓글</li>
+                  <li>반려동물 등록 CRUD</li>
+                  <li>이벤트 기반 알림 + FCM 웹 푸시</li>
+                </ul>
+
+                <ul class="project-stack stagger">
+                  <li>Java 21</li>
+                  <li>Spring Boot</li>
+                  <li>JPA</li>
+                  <li>MySQL</li>
+                  <li>Redis</li>
+                  <li>React</li>
+                  <li>Docker</li>
+                </ul>
+
+              </div>
+
+              <div class="project-links">
+                <a class="btn btn-primary" href="https://github.com/tailsProject/Tails" target="_blank" rel="noopener">GitHub</a>
+                <a class="btn btn-outline" href="https://mytails.site/" target="_blank" rel="noopener">Tails 배포</a>
+                <a class="btn btn-outline" href="https://1drv.ms/p/c/cb606d7905de5b70/IQCaFAmMqaq5Sb5k4il69t94AagbC5igiFhjkSEEgAYxLBs" target="_blank" rel="noopener">PPT 소개</a>
+              </div>
+
+            </div>
+
+          </li>
+        </ul>
+
+      </div>
+
+    </section>
+
+    <section id="education" class="education">
+
+      <div class="section-inner">
+
+        <h2 class="section-title reveal-scale">BACKGROUND</h2>
+
+        <div class="htl">
+          <div class="htl-item">
+            <span class="dot"></span>
+            <div class="htl-date">2021.03</div>
+            <p class="htl-title">운전면허 1종 보통</p>
+            <p class="htl-sub">취득</p>
+          </div>
+
+          <div class="htl-item">
+            <span class="dot"></span>
+            <div class="htl-date">2023</div>
+            <p class="htl-title">대구대학교</p>
+            <p class="htl-sub">식품영양학과 · 졸업</p>
+          </div>
+          
+          <div class="htl-item">
+            <span class="dot"></span>
+            <div class="htl-date">2026.02 - 08</div>
+            <p class="htl-title">코리아AI아카데미</p>
+            <p class="htl-sub">
+              풀스택 개발자 과정 수료 · 성적우수상
+              <span class="img-popup-link" id="edu-img-trigger">상장</span>
+            </p>
+          </div>
+
+          <div class="htl-item">
+            <span class="dot"></span>
+            <div class="htl-date">2026.06</div>
+            <p class="htl-title">정보처리기사 필기</p>
+            <p class="htl-sub">필기합격 · 실기 취득예정</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Hangyeol Park. All rights reserved.</p>
+  </footer>
+
+  <button id="to-top" class="to-top" aria-label="맨 위로"><span>↑</span></button>
+
+  <!-- 이미지 팝업 모달 -->
+  <div class="img-modal" id="img-modal" aria-hidden="true">
+
+    <button class="img-modal-close" id="img-modal-close" aria-label="닫기">&times;</button>
+
+    <div class="img-modal-eyebrow">Korea AI Academy</div>
+
+    <div class="img-modal-grid">
+      <figure class="img-modal-figure">
+        <img src="images/certificate.jpg" alt="수료증">
+        <figcaption>수료증</figcaption>
+      </figure>
+      
+      <figure class="img-modal-figure">
+        <img src="images/award.jpg" alt="성적우수상">
+        <figcaption>성적우수상</figcaption>
+      </figure>
+    </div>
+
+  </div>
+
+  <!-- 기능별 스크립트 -->
+  <script src="js/marquee.js" defer></script>
+  <script src="js/email.js" defer></script>
+  <script src="js/nav.js" defer></script>
+  <script src="js/scroll.js" defer></script>
+  <script src="js/modal.js" defer></script>
+  <script src="js/hero.js" defer></script>
+  <script src="js/projects.js" defer></script>
+  <script src="js/cursor.js" defer></script>
+
+</body>
+</html>
