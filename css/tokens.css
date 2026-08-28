@@ -1,0 +1,23 @@
+/* 색상 변수 정의 */
+
+:root {
+  /* 베이스 컬러 */
+  --color-primary: #d3402a;
+  --color-accent: #8e8a85;
+
+  /* 메인 컬러 기반 색 */
+  --color-primary-dark: color-mix(in srgb, var(--color-primary) 80%, black);
+  --color-primary-light: color-mix(in srgb, var(--color-primary) 45%, white);
+  --color-primary-bg: color-mix(in srgb, var(--color-primary) 6%, white);
+
+  /* 보조 컬러 기반 색 */
+  --color-accent-dark: color-mix(in srgb, var(--color-accent) 55%, black);
+  --color-accent-bg: color-mix(in srgb, var(--color-accent) 8%, white);
+
+  /* 무채색 */
+  --color-text: #222222;
+  --color-text-muted: #767676;
+  --color-border: #e5e5e5;
+  --color-bg: #ffffff;
+  --color-bg-muted: #f7f7f8;
+}
