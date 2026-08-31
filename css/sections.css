@@ -664,7 +664,9 @@ ul {
 }
 
 .c-orange { --c: var(--color-primary); --cd: var(--color-primary-dark); }
+.c-orange-light { --c: color-mix(in srgb, var(--color-primary) 75%, white); --cd: color-mix(in srgb, var(--c) 80%, black); }
 .c-teal { --c: var(--color-accent); --cd: var(--color-accent-dark); }
+.c-grey-dark { --c: color-mix(in srgb, var(--color-accent) 55%, black); --cd: color-mix(in srgb, var(--c) 80%, black); }
 .c-ink { --c: var(--color-text); --cd: var(--color-text); }
 
 .wm-block {
