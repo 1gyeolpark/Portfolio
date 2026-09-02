@@ -807,7 +807,7 @@ ul {
 
 .project-text > p {
   color: var(--color-text-muted);
-  margin: 0 0 20px;
+  margin: 0 0 10px;
 }
 
 .project-features {
@@ -837,6 +837,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  margin-bottom: 10px;
 }
 
 .project-stack li {
